@@ -22,7 +22,8 @@ return [
                 'password' => 'nodirbek19960105',
                 'port' => '587',
                 'encryption' => 'tls',]
-        ],  
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
@@ -69,4 +70,10 @@ return [
 
     ],
     'params' => $params,
+    'modules' => [
+        'gridview' => [
+            'class' => 'kartik\grid\Module',
+            // other module settings
+        ]
+    ]
 ];
